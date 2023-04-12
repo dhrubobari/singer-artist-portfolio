@@ -5,21 +5,24 @@
 
 header {
     max-width: 200px;
-    padding: 40px;
+    padding: 60px;
+    position: absolute;
+    top: 0%;
 }
 
-.holder {
-    display: flex;
-}
+.holder { position: relative; }
 
 h1 {
-    padding: 20px 0px 20px 0px;
+    font-size: 36px;
+    color:antiquewhite;
+    font-family: 'Courgette', cursive;
+    padding: 0px 0px 0px 0px;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 10px 0px 10px 0px;
+    padding: 80px 0px 10px 0px;
 }
 
 nav li {
@@ -27,6 +30,37 @@ nav li {
 }
 
 nav a {
-    color: #000;
+    color: aliceblue;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
     text-decoration: none;
 }
+
+.artist img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(80%);
+}
+
+.listenOn {
+    display: flex;
+    position: absolute;
+    top: 16%;
+    left: 28%;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 32%;
+    left: 29%;
+}
+
+.profile-pic img {
+    width: 810px;
+    height: 480px;
+}
+
+.image-container { padding-right: 5%; }
+
+.image-container:last-child { padding-right: 0; }
