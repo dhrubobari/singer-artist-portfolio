@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mishkid</title>
 
     <!-- Import css -->
     <link rel="stylesheet" href="css/style.css">
@@ -12,42 +12,67 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
+  <main class="container">
+    <!-- Homepage -->
     <section class="holder">
-      <div class="artist">
+      <!-- <div class="artist">
         <img src="assets/images/artist/411960.jpg" alt="" >
-      </div>
+      </div> -->
 
       <!-- Header -->
       <header>
         <div class="logo">
-            <h1>Abel <br>Tesfaye</h1>
+            <h1>Mishkid</h1>
         </div>
+
+        <button class="toggle-nav">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      
         <nav>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">VIDEOS</a></li>
-                <li> <a href="">GALLERY</a></li>
-                <li><a href="">CONTACT</a></li>
+            <ul class="menu">
+              <li><a href="">HOME</a></li>
+              <li><a href="#video-section">VIDEOS</a></li>
+              <li> <a href="">GALLERY</a></li>
+              <li><a href="">CONTACT</a></li>
             </ul>
         </nav>
       </header>
 
       <section class="listenOn">
-        <div class="image-container"><img src="assets/images/music/amazon.jpg" alt=""></div>
-        <div class="image-container"><img src="assets/images/music/apple.jpg" alt=""></div>
-        <div class="image-container"><img src="assets/images/music/spotify.jpg" alt=""></div>
-        <div class="image-container"><img src="assets/images/music/tidal.jpg" alt=""></div>
-        <div class="image-container"><img src="assets/images/music/boom.jpg" alt=""></div>
+        <div class="image-container animate fadeInDown two"><img src="assets/images/music/amazon.jpg" alt=""></div>
+        <div class="image-container animate fadeInDown two"><img src="assets/images/music/apple.jpg" alt=""></div>
+        <div class="image-container animate fadeInDown two"><img src="assets/images/music/spotify.jpg" alt=""></div>
+        <div class="image-container animate fadeInDown two"><img src="assets/images/music/tidal.jpg" alt=""></div>
+        <div class="image-container animate fadeInDown two"><img src="assets/images/music/boom.jpg" alt=""></div>
       </section>
 
       <div class="profile-pic">
         <img src="assets/images/artist/_1_weeknd.jpg" alt="">
       </div>
+
+      <section id="video-section" class="video-container">
+        <div class="single-video">
+            <iframe  src="https://www.youtube.com/embed/NbaJKpqJBi0" width="835" height="460" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="single-video">
+            <iframe src="https://www.youtube.com/embed/6X1Bw2V_sM0" width="835" height="460" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="single-video">
+          <iframe width="835" height="460" src="https://www.youtube.com/embed/9oA6jSdyBUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </section>
     </section>
-  </div>
+
+    <!-- My Js -->
+    <script src="js/index.js"></script>
+  </main>
 </body>
 </html>
